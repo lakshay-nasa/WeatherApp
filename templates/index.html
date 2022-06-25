@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Quicksand&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+    <title>Weather</title>
+</head>
+<style>
+    body {
+        background-image: url({{src}});
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+</style>
+
+<body>
+    <div id="loader">
+        <div>
+
+        </div>
+    </div>
+    <div class="card">
+        <form action="/" method="POST">
+            <div class="search">
+                <input type="text" class="search-box" placeholder="  Search City" name='city'>
+                <button type="submit">Search</button>
+            </div>
+        </form>
+        <div class="weather-details">
+            <h2 class="city">
+                {{caption1}} {{city}}
+            </h2>
+            <h1 class="temp">
+                {{temp}} {{celsiusSymb}}
+            </h1>
+            <div class="weatherDescription">
+                <img src={{Icon}} alt=>
+                <div class="description">
+                    {{wDesc}}
+                </div>
+            </div>
+            <!-- <div class="flex">
+                <img src="" alt="">
+                <div class="description">Cloudy</div>
+            </div> -->
+            <div class="humidity">
+                {{caption2}} {{humidity}}
+            </div>
+            <div class="pressure">
+                {{caption3}} {{pressure}}
+            </div>
+            <!-- <div class="wind"> Wind Speed: 7.8Km</div> -->
+        </div>
+    </div>
+    <script>
+        var loader = document.getElementById("loader");
+
+        window.addEventListener("load", function(){
+            loader.style.display = "none";
+            loader.style.transitionDelay = "200s";
+        })
+    </script>
+</body>
+
+</html>
