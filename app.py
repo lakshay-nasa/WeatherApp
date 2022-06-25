@@ -37,7 +37,7 @@ def home():
         return render_template('index.html', src=getImage(), Icon=None)
 
 if __name__ == "__main__":
-    app.run(host="0.0.0.0", port=5500, debug=True)
+    app.run(port=5000, debug=True)
 
 
 # api id = d670c867d8c8998117536ef9d9abe6fb
