@@ -72,9 +72,9 @@ button:hover {
 }
 
 #loader>div {
-    height: 100px;
-    width: 100px;
-    border: 12px solid #4642426b;
+    height: 50px;
+    width: 50px;
+    border: 8px solid #4642426b;
     border-top-color: white;
     position: absolute;
     margin: auto;
