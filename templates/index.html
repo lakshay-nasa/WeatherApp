@@ -8,6 +8,12 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Quicksand&display=swap"
         rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Secular+One&family=Slabo+27px&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
     <title>Weather</title>
 </head>
@@ -20,6 +26,15 @@
 </style>
 
 <body>
+    <header>
+        <div class="info">
+            <h3>i</h3>
+            <span class="extra-info">
+                This WeatherApp is part of my Full Stack Developer Journey. Check it out <a
+                    href="https://github.com/lakshay-nasa/" target="_blank">here.</a>
+            </span>
+        </div>
+    </header>
     <div id="loader">
         <div>
 
@@ -61,8 +76,9 @@
     <script>
         var loader = document.getElementById("loader");
 
-        window.addEventListener("load", function(){
+        window.addEventListener("load", function () {
             loader.style.display = "none";
+            loader.style.transitionDelay = "200s";
         })
     </script>
 </body>
