@@ -7,6 +7,54 @@ body {
     height: 100vh;
 }
 
+.info {
+    border: 2px solid #000000b0;
+    background-color: #000000b0;
+    height: 2em;
+    width: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: rgba(255, 255, 255, 0.733);
+    position: absolute;
+    right: 5%;
+    top: 5%;
+    font-family: 'Slabo 27px', serif;
+}
+
+.info>h3 {
+    font-size: 1.5em;
+}
+
+.extra-info {
+    display: none;
+    position: absolute;
+    font-size: small;
+    padding: 0.5em;
+    background-color: #0000008c;
+    color: white;
+    border-radius: 1em;
+    width: 17em;
+    height: 4em;
+    right: 6px;
+    font-family: 'Inter', sans-serif;
+}
+
+.extra-info>a {
+    color: blueviolet;
+}
+
+.info:hover {
+    visibility: hidden;
+}
+
+.info:hover .extra-info {
+    display: block;
+    visibility: visible;
+}
+
+
 .card {
     background: #000000d0;
     color: white;
