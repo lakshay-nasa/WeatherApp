@@ -1,0 +1,8 @@
+version: "3.5"
+services:
+  weatherapp:
+    container_name: weatherapp
+    image: quay.io/myproject/weatherapp:latest
+    ports:
+      - target: 8080
+        published: 8080

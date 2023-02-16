@@ -1,0 +1,106 @@
+apiVersion: template.openshift.io/v1
+kind: Template
+metadata:
+  name: myproject-template
+  generatename: ""
+  namespace: ""
+  selflink: ""
+  uid: ""
+  resourceversion: ""
+  generation: 0
+  creationtimestamp: "0001-01-01T00:00:00Z"
+  deletiontimestamp: null
+  deletiongraceperiodseconds: null
+  labels: {}
+  annotations: {}
+  ownerreferences: []
+  finalizers: []
+  clustername: ""
+  managedfields: []
+objects:
+  - apiVersion: networking.k8s.io/v1
+    kind: Ingress
+    metadata:
+      creationTimestamp: null
+      labels:
+        move2kube.konveyor.io/service: myproject
+      name: myproject
+    spec:
+      rules:
+        - host: myproject.com
+          http:
+            paths:
+              - backend:
+                  service:
+                    name: weatherapp
+                    port:
+                      name: port-8080
+                path: /weatherapp
+                pathType: Prefix
+    status:
+      loadBalancer: {}
+  - apiVersion: apps/v1
+    kind: Deployment
+    metadata:
+      creationTimestamp: null
+      labels:
+        move2kube.konveyor.io/service: weatherapp
+      name: weatherapp
+    spec:
+      progressDeadlineSeconds: 600
+      replicas: ${{COMMON_REPLICAS}}
+      revisionHistoryLimit: 10
+      selector:
+        matchLabels:
+          move2kube.konveyor.io/service: weatherapp
+      strategy:
+        rollingUpdate:
+          maxSurge: 25%
+          maxUnavailable: 25%
+        type: RollingUpdate
+      template:
+        metadata:
+          creationTimestamp: null
+          labels:
+            move2kube.konveyor.io/service: weatherapp
+          name: weatherapp
+        spec:
+          containers:
+            - image: quay.io/myproject/weatherapp:latest
+              imagePullPolicy: Always
+              name: weatherapp
+              ports:
+                - containerPort: 8080
+                  protocol: TCP
+              resources: {}
+              terminationMessagePath: /dev/termination-log
+              terminationMessagePolicy: File
+          dnsPolicy: ClusterFirst
+          restartPolicy: Always
+          schedulerName: default-scheduler
+          securityContext: {}
+          terminationGracePeriodSeconds: 30
+    status: {}
+  - apiVersion: v1
+    kind: Service
+    metadata:
+      creationTimestamp: null
+      labels:
+        move2kube.konveyor.io/service: weatherapp
+      name: weatherapp
+    spec:
+      internalTrafficPolicy: Cluster
+      ports:
+        - name: port-8080
+          port: 8080
+          protocol: TCP
+          targetPort: 8080
+      selector:
+        move2kube.konveyor.io/service: weatherapp
+      sessionAffinity: None
+      type: ClusterIP
+    status:
+      loadBalancer: {}
+parameters:
+  - name: COMMON_REPLICAS
+    value: "2"
