@@ -15,7 +15,7 @@
                 "consumedArtifacts": [
                     "weatherapp - Service"
                 ],
-                "pathMappings": "(Source, , source)\n(Template, /tmp/move2kube3927690518/m2kassets/built-in/transformers/dockerfilegenerator/python/templates, source)",
+                "pathMappings": "(Source, , source)\n(Template, /tmp/move2kube996251051/m2kassets/built-in/transformers/dockerfilegenerator/python/templates, source)",
                 "producedArtifacts": [
                     "weatherapp - Dockerfile",
                     "weatherapp - DockerfileForService"
@@ -25,30 +25,33 @@
         "10": {
             "id": 10,
             "iteration": 4,
-            "name": "iteration: 4\nclass: Tekton\nname: Tekton",
+            "name": "iteration: 4\nclass: ClusterSelectorTransformer\nname: ClusterSelector",
             "data": {
                 "consumedArtifacts": [
                     "myproject - IR",
                     "myproject - IR"
                 ],
-                "pathMappings": "(Default, /tmp/move2kube3927690518/environment-Tekton-3235595853/deploy/cicd/tekton/myproject-ingress.yaml, deploy/cicd/tekton/myproject-ingress.yaml)\n(Default, /tmp/move2kube3927690518/environment-Tekton-3235595853/deploy/cicd/tekton/myproject-tekton-triggers-admin-serviceaccount.yaml, deploy/cicd/tekton/myproject-tekton-triggers-admin-serviceaccount.yaml)\n(Default, /tmp/move2kube3927690518/environment-Tekton-3235595853/deploy/cicd/tekton/myproject-clone-push-serviceaccount.yaml, deploy/cicd/tekton/myproject-clone-push-serviceaccount.yaml)\n(Default, /tmp/move2kube3927690518/environment-Tekton-3235595853/deploy/cicd/tekton/myproject-tekton-triggers-admin-rolebinding.yaml, deploy/cicd/tekton/myproject-tekton-triggers-admin-rolebinding.yaml)\n(Default, /tmp/move2kube3927690518/environment-Tekton-3235595853/deploy/cicd/tekton/myproject-tekton-triggers-admin-role.yaml, deploy/cicd/tekton/myproject-tekton-triggers-admin-role.yaml)\n(Default, /tmp/move2kube3927690518/environment-Tekton-3235595853/deploy/cicd/tekton/myproject-image-registry-secret.yaml, deploy/cicd/tekton/myproject-image-registry-secret.yaml)\n(Default, /tmp/move2kube3927690518/environment-Tekton-3235595853/deploy/cicd/tekton/myproject-git-repo-eventlistener.yaml, deploy/cicd/tekton/myproject-git-repo-eventlistener.yaml)\n(Default, /tmp/move2kube3927690518/environment-Tekton-3235595853/deploy/cicd/tekton/myproject-git-event-triggerbinding.yaml, deploy/cicd/tekton/myproject-git-event-triggerbinding.yaml)\n(Default, /tmp/move2kube3927690518/environment-Tekton-3235595853/deploy/cicd/tekton/myproject-run-clone-build-push-triggertemplate.yaml, deploy/cicd/tekton/myproject-run-clone-build-push-triggertemplate.yaml)\n(Default, /tmp/move2kube3927690518/environment-Tekton-3235595853/deploy/cicd/tekton/myproject-clone-build-push-pipeline.yaml, deploy/cicd/tekton/myproject-clone-build-push-pipeline.yaml)\n(Default, /tmp/move2kube3927690518/environment-Tekton-3235595853/deploy/cicd/tekton/myproject-ingress.yaml, deploy/cicd/tekton/myproject-ingress.yaml)\n(Default, /tmp/move2kube3927690518/environment-Tekton-3235595853/deploy/cicd/tekton/myproject-tekton-triggers-admin-serviceaccount.yaml, deploy/cicd/tekton/myproject-tekton-triggers-admin-serviceaccount.yaml)\n(Default, /tmp/move2kube3927690518/environment-Tekton-3235595853/deploy/cicd/tekton/myproject-clone-push-serviceaccount.yaml, deploy/cicd/tekton/myproject-clone-push-serviceaccount.yaml)\n(Default, /tmp/move2kube3927690518/environment-Tekton-3235595853/deploy/cicd/tekton/myproject-tekton-triggers-admin-rolebinding.yaml, deploy/cicd/tekton/myproject-tekton-triggers-admin-rolebinding.yaml)\n(Default, /tmp/move2kube3927690518/environment-Tekton-3235595853/deploy/cicd/tekton/myproject-tekton-triggers-admin-role.yaml, deploy/cicd/tekton/myproject-tekton-triggers-admin-role.yaml)\n(Default, /tmp/move2kube3927690518/environment-Tekton-3235595853/deploy/cicd/tekton/myproject-image-registry-secret.yaml, deploy/cicd/tekton/myproject-image-registry-secret.yaml)\n(Default, /tmp/move2kube3927690518/environment-Tekton-3235595853/deploy/cicd/tekton/myproject-git-repo-eventlistener.yaml, deploy/cicd/tekton/myproject-git-repo-eventlistener.yaml)\n(Default, /tmp/move2kube3927690518/environment-Tekton-3235595853/deploy/cicd/tekton/myproject-git-event-triggerbinding.yaml, deploy/cicd/tekton/myproject-git-event-triggerbinding.yaml)\n(Default, /tmp/move2kube3927690518/environment-Tekton-3235595853/deploy/cicd/tekton/myproject-run-clone-build-push-triggertemplate.yaml, deploy/cicd/tekton/myproject-run-clone-build-push-triggertemplate.yaml)\n(Default, /tmp/move2kube3927690518/environment-Tekton-3235595853/deploy/cicd/tekton/myproject-clone-build-push-pipeline.yaml, deploy/cicd/tekton/myproject-clone-build-push-pipeline.yaml)",
+                "pathMappings": "",
                 "producedArtifacts": [
-                    "Tekton - KubernetesYamls",
-                    "Tekton - KubernetesYamls"
+                    "myproject - IR",
+                    "myproject - IR"
                 ]
             }
         },
         "11": {
             "id": 11,
             "iteration": 4,
-            "name": "iteration: 4\nclass: ComposeGenerator\nname: ComposeGenerator",
+            "name": "iteration: 4\nclass: ArgoCD\nname: ArgoCD",
             "data": {
                 "consumedArtifacts": [
                     "myproject - IR",
                     "myproject - IR"
                 ],
-                "pathMappings": "(Default, /tmp/move2kube3927690518/environment-ComposeGenerator-3711458891/deploy/compose, deploy/compose)\n(Default, /tmp/move2kube3927690518/environment-ComposeGenerator-3711458891/deploy/compose, deploy/compose)",
-                "producedArtifacts": []
+                "pathMappings": "(Default, /tmp/move2kube996251051/environment-ArgoCD-948708721/deploy/cicd/argocd/myproject-deploy-application.yaml, deploy/cicd/argocd/myproject-deploy-application.yaml)\n(Default, /tmp/move2kube996251051/environment-ArgoCD-948708721/deploy/cicd/argocd/myproject-deploy-application.yaml, deploy/cicd/argocd/myproject-deploy-application.yaml)",
+                "producedArtifacts": [
+                    "ArgoCD - KubernetesYamls",
+                    "ArgoCD - KubernetesYamls"
+                ]
             }
         },
         "12": {
@@ -70,21 +73,33 @@
         "13": {
             "id": 13,
             "iteration": 4,
-            "name": "iteration: 4\nclass: Knative\nname: Knative",
+            "name": "iteration: 4\nclass: BuildConfig\nname: Buildconfig",
             "data": {
                 "consumedArtifacts": [
                     "myproject - IR",
                     "myproject - IR"
                 ],
-                "pathMappings": "(Default, /tmp/move2kube3927690518/environment-Knative-942142752/deploy/knative/weatherapp-service.yaml, deploy/knative/weatherapp-service.yaml)\n(Default, /tmp/move2kube3927690518/environment-Knative-942142752/deploy/knative/weatherapp-service.yaml, deploy/knative/weatherapp-service.yaml)",
-                "producedArtifacts": [
-                    "Knative - KubernetesYamls",
-                    "Knative - KubernetesYamls"
-                ]
+                "pathMappings": "",
+                "producedArtifacts": []
             }
         },
         "14": {
             "id": 14,
+            "iteration": 4,
+            "name": "iteration: 4\nclass: ContainerImagesPushScript\nname: ContainerImagesPushScriptGenerator",
+            "data": {
+                "consumedArtifacts": [
+                    "myproject - NewImages",
+                    "myproject - NewImages"
+                ],
+                "pathMappings": "(Template, /tmp/move2kube996251051/m2kassets/built-in/transformers/containerimagespushscript/templates, scripts)",
+                "producedArtifacts": [
+                    "ContainerImagesPushScript - ContainerImagesPushScript"
+                ]
+            }
+        },
+        "15": {
+            "id": 15,
             "iteration": 4,
             "name": "iteration: 4\nclass: ClusterSelectorTransformer\nname: ClusterSelector",
             "data": {
@@ -99,67 +114,52 @@
                 ]
             }
         },
-        "15": {
-            "id": 15,
+        "16": {
+            "id": 16,
             "iteration": 4,
-            "name": "iteration: 4\nclass: ArgoCD\nname: ArgoCD",
+            "name": "iteration: 4\nclass: Tekton\nname: Tekton",
             "data": {
                 "consumedArtifacts": [
                     "myproject - IR",
                     "myproject - IR"
                 ],
-                "pathMappings": "(Default, /tmp/move2kube3927690518/environment-ArgoCD-3521431135/deploy/cicd/argocd/myproject-deploy-application.yaml, deploy/cicd/argocd/myproject-deploy-application.yaml)\n(Default, /tmp/move2kube3927690518/environment-ArgoCD-3521431135/deploy/cicd/argocd/myproject-deploy-application.yaml, deploy/cicd/argocd/myproject-deploy-application.yaml)",
+                "pathMappings": "(Default, /tmp/move2kube996251051/environment-Tekton-4069827897/deploy/cicd/tekton/myproject-ingress.yaml, deploy/cicd/tekton/myproject-ingress.yaml)\n(Default, /tmp/move2kube996251051/environment-Tekton-4069827897/deploy/cicd/tekton/myproject-tekton-triggers-admin-serviceaccount.yaml, deploy/cicd/tekton/myproject-tekton-triggers-admin-serviceaccount.yaml)\n(Default, /tmp/move2kube996251051/environment-Tekton-4069827897/deploy/cicd/tekton/myproject-clone-push-serviceaccount.yaml, deploy/cicd/tekton/myproject-clone-push-serviceaccount.yaml)\n(Default, /tmp/move2kube996251051/environment-Tekton-4069827897/deploy/cicd/tekton/myproject-tekton-triggers-admin-rolebinding.yaml, deploy/cicd/tekton/myproject-tekton-triggers-admin-rolebinding.yaml)\n(Default, /tmp/move2kube996251051/environment-Tekton-4069827897/deploy/cicd/tekton/myproject-tekton-triggers-admin-role.yaml, deploy/cicd/tekton/myproject-tekton-triggers-admin-role.yaml)\n(Default, /tmp/move2kube996251051/environment-Tekton-4069827897/deploy/cicd/tekton/myproject-image-registry-secret.yaml, deploy/cicd/tekton/myproject-image-registry-secret.yaml)\n(Default, /tmp/move2kube996251051/environment-Tekton-4069827897/deploy/cicd/tekton/myproject-git-repo-eventlistener.yaml, deploy/cicd/tekton/myproject-git-repo-eventlistener.yaml)\n(Default, /tmp/move2kube996251051/environment-Tekton-4069827897/deploy/cicd/tekton/myproject-git-event-triggerbinding.yaml, deploy/cicd/tekton/myproject-git-event-triggerbinding.yaml)\n(Default, /tmp/move2kube996251051/environment-Tekton-4069827897/deploy/cicd/tekton/myproject-run-clone-build-push-triggertemplate.yaml, deploy/cicd/tekton/myproject-run-clone-build-push-triggertemplate.yaml)\n(Default, /tmp/move2kube996251051/environment-Tekton-4069827897/deploy/cicd/tekton/myproject-clone-build-push-pipeline.yaml, deploy/cicd/tekton/myproject-clone-build-push-pipeline.yaml)\n(Default, /tmp/move2kube996251051/environment-Tekton-4069827897/deploy/cicd/tekton/myproject-ingress.yaml, deploy/cicd/tekton/myproject-ingress.yaml)\n(Default, /tmp/move2kube996251051/environment-Tekton-4069827897/deploy/cicd/tekton/myproject-tekton-triggers-admin-serviceaccount.yaml, deploy/cicd/tekton/myproject-tekton-triggers-admin-serviceaccount.yaml)\n(Default, /tmp/move2kube996251051/environment-Tekton-4069827897/deploy/cicd/tekton/myproject-clone-push-serviceaccount.yaml, deploy/cicd/tekton/myproject-clone-push-serviceaccount.yaml)\n(Default, /tmp/move2kube996251051/environment-Tekton-4069827897/deploy/cicd/tekton/myproject-tekton-triggers-admin-rolebinding.yaml, deploy/cicd/tekton/myproject-tekton-triggers-admin-rolebinding.yaml)\n(Default, /tmp/move2kube996251051/environment-Tekton-4069827897/deploy/cicd/tekton/myproject-tekton-triggers-admin-role.yaml, deploy/cicd/tekton/myproject-tekton-triggers-admin-role.yaml)\n(Default, /tmp/move2kube996251051/environment-Tekton-4069827897/deploy/cicd/tekton/myproject-image-registry-secret.yaml, deploy/cicd/tekton/myproject-image-registry-secret.yaml)\n(Default, /tmp/move2kube996251051/environment-Tekton-4069827897/deploy/cicd/tekton/myproject-git-repo-eventlistener.yaml, deploy/cicd/tekton/myproject-git-repo-eventlistener.yaml)\n(Default, /tmp/move2kube996251051/environment-Tekton-4069827897/deploy/cicd/tekton/myproject-git-event-triggerbinding.yaml, deploy/cicd/tekton/myproject-git-event-triggerbinding.yaml)\n(Default, /tmp/move2kube996251051/environment-Tekton-4069827897/deploy/cicd/tekton/myproject-run-clone-build-push-triggertemplate.yaml, deploy/cicd/tekton/myproject-run-clone-build-push-triggertemplate.yaml)\n(Default, /tmp/move2kube996251051/environment-Tekton-4069827897/deploy/cicd/tekton/myproject-clone-build-push-pipeline.yaml, deploy/cicd/tekton/myproject-clone-build-push-pipeline.yaml)",
                 "producedArtifacts": [
-                    "ArgoCD - KubernetesYamls",
-                    "ArgoCD - KubernetesYamls"
-                ]
-            }
-        },
-        "16": {
-            "id": 16,
-            "iteration": 4,
-            "name": "iteration: 4\nclass: ContainerImagesPushScript\nname: ContainerImagesPushScriptGenerator",
-            "data": {
-                "consumedArtifacts": [
-                    "myproject - NewImages",
-                    "myproject - NewImages"
-                ],
-                "pathMappings": "(Template, /tmp/move2kube3927690518/m2kassets/built-in/transformers/containerimagespushscript/templates, scripts)",
-                "producedArtifacts": [
-                    "ContainerImagesPushScript - ContainerImagesPushScript"
+                    "Tekton - KubernetesYamls",
+                    "Tekton - KubernetesYamls"
                 ]
             }
         },
         "17": {
             "id": 17,
             "iteration": 5,
-            "name": "iteration: 5\nclass: Parameterizer\nname: Parameterizer",
+            "name": "iteration: 5\nclass: ReadMeGenerator\nname: ReadMeGenerator",
             "data": {
                 "consumedArtifacts": [
-                    "weatherapp - KubernetesYamls",
-                    "Tekton - KubernetesYamls",
                     "Knative - KubernetesYamls",
+                    "weatherapp - KubernetesYamls",
                     "ArgoCD - KubernetesYamls",
-                    "ArgoCD - KubernetesYamls"
+                    "ContainerImagesPushScript - ContainerImagesPushScript",
+                    "Tekton - KubernetesYamls",
+                    "Tekton - KubernetesYamls"
                 ],
-                "pathMappings": "(PathTemplate, {{ $pathType := EnvPathType .YamlsPath}}{{ $rel := Rel .YamlsPath }}{{ if eq $pathType \"Source\" }}source/{{end}}{{ $rel }}{{ if ne $rel \".\" }}/..{{end}}/{{ FilePathBase .YamlsPath }}-parameterized/helm-chart, )\n(Default, /tmp/move2kube3927690518/environment-Parameterizer-1923400927/680205647/yamls-parameterized/helm, {{ .HelmPath1902081 }})\n(PathTemplate, {{ $pathType := EnvPathType .YamlsPath}}{{ $rel := Rel .YamlsPath }}{{ if eq $pathType \"Source\" }}source/{{end}}{{ $rel }}{{ if ne $rel \".\" }}/..{{end}}/{{ FilePathBase .YamlsPath }}-parameterized/kustomize, )\n(Default, /tmp/move2kube3927690518/environment-Parameterizer-1923400927/680205647/yamls-parameterized/kustomize, {{ .KustomizePath4941318 }})\n(PathTemplate, {{ $pathType := EnvPathType .YamlsPath}}{{ $rel := Rel .YamlsPath }}{{ if eq $pathType \"Source\" }}source/{{end}}{{ $rel }}{{ if ne $rel \".\" }}/..{{end}}/{{ FilePathBase .YamlsPath }}-parameterized/openshift-template, )\n(Default, /tmp/move2kube3927690518/environment-Parameterizer-1923400927/680205647/yamls-parameterized/octemplates, {{ .OCTemplatePath954425 }})\n(PathTemplate, {{ $pathType := EnvPathType .YamlsPath}}{{ $rel := Rel .YamlsPath }}{{ if eq $pathType \"Source\" }}source/{{end}}{{ $rel }}{{ if ne $rel \".\" }}/..{{end}}/{{ FilePathBase .YamlsPath }}-parameterized/helm-chart, )\n(Default, /tmp/move2kube3927690518/environment-Parameterizer-1923400927/2727843805/tekton-parameterized/helm, {{ .HelmPath6122540 }})\n(PathTemplate, {{ $pathType := EnvPathType .YamlsPath}}{{ $rel := Rel .YamlsPath }}{{ if eq $pathType \"Source\" }}source/{{end}}{{ $rel }}{{ if ne $rel \".\" }}/..{{end}}/{{ FilePathBase .YamlsPath }}-parameterized/kustomize, )\n(Default, /tmp/move2kube3927690518/environment-Parameterizer-1923400927/2727843805/tekton-parameterized/kustomize, {{ .KustomizePath8240456 }})\n(PathTemplate, {{ $pathType := EnvPathType .YamlsPath}}{{ $rel := Rel .YamlsPath }}{{ if eq $pathType \"Source\" }}source/{{end}}{{ $rel }}{{ if ne $rel \".\" }}/..{{end}}/{{ FilePathBase .YamlsPath }}-parameterized/openshift-template, )\n(Default, /tmp/move2kube3927690518/environment-Parameterizer-1923400927/2727843805/tekton-parameterized/octemplates, {{ .OCTemplatePath6203300 }})\n(PathTemplate, {{ $pathType := EnvPathType .YamlsPath}}{{ $rel := Rel .YamlsPath }}{{ if eq $pathType \"Source\" }}source/{{end}}{{ $rel }}{{ if ne $rel \".\" }}/..{{end}}/{{ FilePathBase .YamlsPath }}-parameterized/helm-chart, )\n(Default, /tmp/move2kube3927690518/environment-Parameterizer-1923400927/4165292705/knative-parameterized/helm, {{ .HelmPath6410694 }})\n(PathTemplate, {{ $pathType := EnvPathType .YamlsPath}}{{ $rel := Rel .YamlsPath }}{{ if eq $pathType \"Source\" }}source/{{end}}{{ $rel }}{{ if ne $rel \".\" }}/..{{end}}/{{ FilePathBase .YamlsPath }}-parameterized/kustomize, )\n(Default, /tmp/move2kube3927690518/environment-Parameterizer-1923400927/4165292705/knative-parameterized/kustomize, {{ .KustomizePath7278511 }})\n(PathTemplate, {{ $pathType := EnvPathType .YamlsPath}}{{ $rel := Rel .YamlsPath }}{{ if eq $pathType \"Source\" }}source/{{end}}{{ $rel }}{{ if ne $rel \".\" }}/..{{end}}/{{ FilePathBase .YamlsPath }}-parameterized/openshift-template, )\n(Default, /tmp/move2kube3927690518/environment-Parameterizer-1923400927/4165292705/knative-parameterized/octemplates, {{ .OCTemplatePath128162 }})\n(PathTemplate, {{ $pathType := EnvPathType .YamlsPath}}{{ $rel := Rel .YamlsPath }}{{ if eq $pathType \"Source\" }}source/{{end}}{{ $rel }}{{ if ne $rel \".\" }}/..{{end}}/{{ FilePathBase .YamlsPath }}-parameterized/helm-chart, )\n(Default, /tmp/move2kube3927690518/environment-Parameterizer-1923400927/1686406974/argocd-parameterized/helm, {{ .HelmPath7455089 }})\n(PathTemplate, {{ $pathType := EnvPathType .YamlsPath}}{{ $rel := Rel .YamlsPath }}{{ if eq $pathType \"Source\" }}source/{{end}}{{ $rel }}{{ if ne $rel \".\" }}/..{{end}}/{{ FilePathBase .YamlsPath }}-parameterized/kustomize, )\n(Default, /tmp/move2kube3927690518/environment-Parameterizer-1923400927/1686406974/argocd-parameterized/kustomize, {{ .KustomizePath3024728 }})\n(PathTemplate, {{ $pathType := EnvPathType .YamlsPath}}{{ $rel := Rel .YamlsPath }}{{ if eq $pathType \"Source\" }}source/{{end}}{{ $rel }}{{ if ne $rel \".\" }}/..{{end}}/{{ FilePathBase .YamlsPath }}-parameterized/openshift-template, )\n(Default, /tmp/move2kube3927690518/environment-Parameterizer-1923400927/1686406974/argocd-parameterized/octemplates, {{ .OCTemplatePath6933274 }})\n(PathTemplate, {{ $pathType := EnvPathType .YamlsPath}}{{ $rel := Rel .YamlsPath }}{{ if eq $pathType \"Source\" }}source/{{end}}{{ $rel }}{{ if ne $rel \".\" }}/..{{end}}/{{ FilePathBase .YamlsPath }}-parameterized/helm-chart, )\n(Default, /tmp/move2kube3927690518/environment-Parameterizer-1923400927/1342689943/argocd-parameterized/helm, {{ .HelmPath7811211 }})\n(PathTemplate, {{ $pathType := EnvPathType .YamlsPath}}{{ $rel := Rel .YamlsPath }}{{ if eq $pathType \"Source\" }}source/{{end}}{{ $rel }}{{ if ne $rel \".\" }}/..{{end}}/{{ FilePathBase .YamlsPath }}-parameterized/kustomize, )\n(Default, /tmp/move2kube3927690518/environment-Parameterizer-1923400927/1342689943/argocd-parameterized/kustomize, {{ .KustomizePath9431445 }})\n(PathTemplate, {{ $pathType := EnvPathType .YamlsPath}}{{ $rel := Rel .YamlsPath }}{{ if eq $pathType \"Source\" }}source/{{end}}{{ $rel }}{{ if ne $rel \".\" }}/..{{end}}/{{ FilePathBase .YamlsPath }}-parameterized/openshift-template, )\n(Default, /tmp/move2kube3927690518/environment-Parameterizer-1923400927/1342689943/argocd-parameterized/octemplates, {{ .OCTemplatePath8323237 }})",
+                "pathMappings": "(Template, /tmp/move2kube996251051/m2kassets/built-in/transformers/readmegenerator/templates, )",
                 "producedArtifacts": []
             }
         },
         "18": {
             "id": 18,
             "iteration": 5,
-            "name": "iteration: 5\nclass: ReadMeGenerator\nname: ReadMeGenerator",
+            "name": "iteration: 5\nclass: Parameterizer\nname: Parameterizer",
             "data": {
                 "consumedArtifacts": [
-                    "weatherapp - KubernetesYamls",
-                    "Tekton - KubernetesYamls",
                     "Knative - KubernetesYamls",
+                    "weatherapp - KubernetesYamls",
                     "ArgoCD - KubernetesYamls",
-                    "ContainerImagesPushScript - ContainerImagesPushScript",
-                    "ContainerImagesPushScript - ContainerImagesPushScript"
+                    "Tekton - KubernetesYamls",
+                    "Tekton - KubernetesYamls"
                 ],
-                "pathMappings": "(Template, /tmp/move2kube3927690518/m2kassets/built-in/transformers/readmegenerator/templates, )",
+                "pathMappings": "(PathTemplate, {{ $pathType := EnvPathType .YamlsPath}}{{ $rel := Rel .YamlsPath }}{{ if eq $pathType \"Source\" }}source/{{end}}{{ $rel }}{{ if ne $rel \".\" }}/..{{end}}/{{ FilePathBase .YamlsPath }}-parameterized/helm-chart, )\n(Default, /tmp/move2kube996251051/environment-Parameterizer-3210791057/531093217/knative-parameterized/helm, {{ .HelmPath1902081 }})\n(PathTemplate, {{ $pathType := EnvPathType .YamlsPath}}{{ $rel := Rel .YamlsPath }}{{ if eq $pathType \"Source\" }}source/{{end}}{{ $rel }}{{ if ne $rel \".\" }}/..{{end}}/{{ FilePathBase .YamlsPath }}-parameterized/kustomize, )\n(Default, /tmp/move2kube996251051/environment-Parameterizer-3210791057/531093217/knative-parameterized/kustomize, {{ .KustomizePath4941318 }})\n(PathTemplate, {{ $pathType := EnvPathType .YamlsPath}}{{ $rel := Rel .YamlsPath }}{{ if eq $pathType \"Source\" }}source/{{end}}{{ $rel }}{{ if ne $rel \".\" }}/..{{end}}/{{ FilePathBase .YamlsPath }}-parameterized/openshift-template, )\n(Default, /tmp/move2kube996251051/environment-Parameterizer-3210791057/531093217/knative-parameterized/octemplates, {{ .OCTemplatePath954425 }})\n(PathTemplate, {{ $pathType := EnvPathType .YamlsPath}}{{ $rel := Rel .YamlsPath }}{{ if eq $pathType \"Source\" }}source/{{end}}{{ $rel }}{{ if ne $rel \".\" }}/..{{end}}/{{ FilePathBase .YamlsPath }}-parameterized/helm-chart, )\n(Default, /tmp/move2kube996251051/environment-Parameterizer-3210791057/1577819857/yamls-parameterized/helm, {{ .HelmPath6122540 }})\n(PathTemplate, {{ $pathType := EnvPathType .YamlsPath}}{{ $rel := Rel .YamlsPath }}{{ if eq $pathType \"Source\" }}source/{{end}}{{ $rel }}{{ if ne $rel \".\" }}/..{{end}}/{{ FilePathBase .YamlsPath }}-parameterized/kustomize, )\n(Default, /tmp/move2kube996251051/environment-Parameterizer-3210791057/1577819857/yamls-parameterized/kustomize, {{ .KustomizePath8240456 }})\n(PathTemplate, {{ $pathType := EnvPathType .YamlsPath}}{{ $rel := Rel .YamlsPath }}{{ if eq $pathType \"Source\" }}source/{{end}}{{ $rel }}{{ if ne $rel \".\" }}/..{{end}}/{{ FilePathBase .YamlsPath }}-parameterized/openshift-template, )\n(Default, /tmp/move2kube996251051/environment-Parameterizer-3210791057/1577819857/yamls-parameterized/octemplates, {{ .OCTemplatePath6203300 }})\n(PathTemplate, {{ $pathType := EnvPathType .YamlsPath}}{{ $rel := Rel .YamlsPath }}{{ if eq $pathType \"Source\" }}source/{{end}}{{ $rel }}{{ if ne $rel \".\" }}/..{{end}}/{{ FilePathBase .YamlsPath }}-parameterized/helm-chart, )\n(Default, /tmp/move2kube996251051/environment-Parameterizer-3210791057/987386610/argocd-parameterized/helm, {{ .HelmPath6410694 }})\n(PathTemplate, {{ $pathType := EnvPathType .YamlsPath}}{{ $rel := Rel .YamlsPath }}{{ if eq $pathType \"Source\" }}source/{{end}}{{ $rel }}{{ if ne $rel \".\" }}/..{{end}}/{{ FilePathBase .YamlsPath }}-parameterized/kustomize, )\n(Default, /tmp/move2kube996251051/environment-Parameterizer-3210791057/987386610/argocd-parameterized/kustomize, {{ .KustomizePath7278511 }})\n(PathTemplate, {{ $pathType := EnvPathType .YamlsPath}}{{ $rel := Rel .YamlsPath }}{{ if eq $pathType \"Source\" }}source/{{end}}{{ $rel }}{{ if ne $rel \".\" }}/..{{end}}/{{ FilePathBase .YamlsPath }}-parameterized/openshift-template, )\n(Default, /tmp/move2kube996251051/environment-Parameterizer-3210791057/987386610/argocd-parameterized/octemplates, {{ .OCTemplatePath128162 }})\n(PathTemplate, {{ $pathType := EnvPathType .YamlsPath}}{{ $rel := Rel .YamlsPath }}{{ if eq $pathType \"Source\" }}source/{{end}}{{ $rel }}{{ if ne $rel \".\" }}/..{{end}}/{{ FilePathBase .YamlsPath }}-parameterized/helm-chart, )\n(Default, /tmp/move2kube996251051/environment-Parameterizer-3210791057/3646804319/tekton-parameterized/helm, {{ .HelmPath7455089 }})\n(PathTemplate, {{ $pathType := EnvPathType .YamlsPath}}{{ $rel := Rel .YamlsPath }}{{ if eq $pathType \"Source\" }}source/{{end}}{{ $rel }}{{ if ne $rel \".\" }}/..{{end}}/{{ FilePathBase .YamlsPath }}-parameterized/kustomize, )\n(Default, /tmp/move2kube996251051/environment-Parameterizer-3210791057/3646804319/tekton-parameterized/kustomize, {{ .KustomizePath3024728 }})\n(PathTemplate, {{ $pathType := EnvPathType .YamlsPath}}{{ $rel := Rel .YamlsPath }}{{ if eq $pathType \"Source\" }}source/{{end}}{{ $rel }}{{ if ne $rel \".\" }}/..{{end}}/{{ FilePathBase .YamlsPath }}-parameterized/openshift-template, )\n(Default, /tmp/move2kube996251051/environment-Parameterizer-3210791057/3646804319/tekton-parameterized/octemplates, {{ .OCTemplatePath6933274 }})\n(PathTemplate, {{ $pathType := EnvPathType .YamlsPath}}{{ $rel := Rel .YamlsPath }}{{ if eq $pathType \"Source\" }}source/{{end}}{{ $rel }}{{ if ne $rel \".\" }}/..{{end}}/{{ FilePathBase .YamlsPath }}-parameterized/helm-chart, )\n(Default, /tmp/move2kube996251051/environment-Parameterizer-3210791057/1964922104/tekton-parameterized/helm, {{ .HelmPath7811211 }})\n(PathTemplate, {{ $pathType := EnvPathType .YamlsPath}}{{ $rel := Rel .YamlsPath }}{{ if eq $pathType \"Source\" }}source/{{end}}{{ $rel }}{{ if ne $rel \".\" }}/..{{end}}/{{ FilePathBase .YamlsPath }}-parameterized/kustomize, )\n(Default, /tmp/move2kube996251051/environment-Parameterizer-3210791057/1964922104/tekton-parameterized/kustomize, {{ .KustomizePath9431445 }})\n(PathTemplate, {{ $pathType := EnvPathType .YamlsPath}}{{ $rel := Rel .YamlsPath }}{{ if eq $pathType \"Source\" }}source/{{end}}{{ $rel }}{{ if ne $rel \".\" }}/..{{end}}/{{ FilePathBase .YamlsPath }}-parameterized/openshift-template, )\n(Default, /tmp/move2kube996251051/environment-Parameterizer-3210791057/1964922104/tekton-parameterized/octemplates, {{ .OCTemplatePath8323237 }})",
                 "producedArtifacts": []
             }
         },
@@ -202,7 +202,7 @@
                     "weatherapp - Dockerfile",
                     "weatherapp - Dockerfile"
                 ],
-                "pathMappings": "(Template, /tmp/move2kube3927690518/m2kassets/built-in/transformers/dockerfile/dockerimagebuildscript/templates, scripts)",
+                "pathMappings": "(Template, /tmp/move2kube996251051/m2kassets/built-in/transformers/dockerfile/dockerimagebuildscript/templates, scripts)",
                 "producedArtifacts": [
                     "myproject - NewImages",
                     "ContainerImageBuildScript - ContainerImageBuildScript"
@@ -228,22 +228,35 @@
         "6": {
             "id": 6,
             "iteration": 4,
-            "name": "iteration: 4\nclass: Kubernetes\nname: Kubernetes",
+            "name": "iteration: 4\nclass: Knative\nname: Knative",
             "data": {
                 "consumedArtifacts": [
                     "myproject - IR",
                     "myproject - IR"
                 ],
-                "pathMappings": "(PathTemplate, deploy/yamls, )\n(Default, /tmp/move2kube3927690518/environment-Kubernetes-1546279007/k8s-yamls-8498081, {{ .OutputPath9727887 }})\n(PathTemplate, deploy/yamls, )\n(Default, /tmp/move2kube3927690518/environment-Kubernetes-1546279007/k8s-yamls-7131847, {{ .OutputPath9984059 }})",
+                "pathMappings": "(Default, /tmp/move2kube996251051/environment-Knative-1090015699/deploy/knative/weatherapp-service.yaml, deploy/knative/weatherapp-service.yaml)\n(Default, /tmp/move2kube996251051/environment-Knative-1090015699/deploy/knative/weatherapp-service.yaml, deploy/knative/weatherapp-service.yaml)",
                 "producedArtifacts": [
-                    "weatherapp - KubernetesYamls",
-                    "weatherapp - KubernetesYamls"
+                    "Knative - KubernetesYamls",
+                    "Knative - KubernetesYamls"
                 ]
             }
         },
         "7": {
             "id": 7,
             "iteration": 4,
+            "name": "iteration: 4\nclass: ComposeGenerator\nname: ComposeGenerator",
+            "data": {
+                "consumedArtifacts": [
+                    "myproject - IR",
+                    "myproject - IR"
+                ],
+                "pathMappings": "(Default, /tmp/move2kube996251051/environment-ComposeGenerator-1429845713/deploy/compose, deploy/compose)\n(Default, /tmp/move2kube996251051/environment-ComposeGenerator-1429845713/deploy/compose, deploy/compose)",
+                "producedArtifacts": []
+            }
+        },
+        "8": {
+            "id": 8,
+            "iteration": 4,
             "name": "iteration: 4\nclass: ClusterSelectorTransformer\nname: ClusterSelector",
             "data": {
                 "consumedArtifacts": [
@@ -257,32 +270,19 @@
                 ]
             }
         },
-        "8": {
-            "id": 8,
-            "iteration": 4,
-            "name": "iteration: 4\nclass: BuildConfig\nname: Buildconfig",
-            "data": {
-                "consumedArtifacts": [
-                    "myproject - IR",
-                    "myproject - IR"
-                ],
-                "pathMappings": "",
-                "producedArtifacts": []
-            }
-        },
         "9": {
             "id": 9,
             "iteration": 4,
-            "name": "iteration: 4\nclass: ClusterSelectorTransformer\nname: ClusterSelector",
+            "name": "iteration: 4\nclass: Kubernetes\nname: Kubernetes",
             "data": {
                 "consumedArtifacts": [
                     "myproject - IR",
                     "myproject - IR"
                 ],
-                "pathMappings": "",
+                "pathMappings": "(PathTemplate, deploy/yamls, )\n(Default, /tmp/move2kube996251051/environment-Kubernetes-482042565/k8s-yamls-8498081, {{ .OutputPath9727887 }})\n(PathTemplate, deploy/yamls, )\n(Default, /tmp/move2kube996251051/environment-Kubernetes-482042565/k8s-yamls-7131847, {{ .OutputPath9984059 }})",
                 "producedArtifacts": [
-                    "myproject - IR",
-                    "myproject - IR"
+                    "weatherapp - KubernetesYamls",
+                    "weatherapp - KubernetesYamls"
                 ]
             }
         }
@@ -477,23 +477,23 @@
         },
         "24": {
             "id": 24,
-            "from": 3,
+            "from": 4,
             "to": 14,
-            "name": "3 -\u003e 14",
+            "name": "4 -\u003e 14",
             "data": {
                 "newArtifact": [
-                    "myproject - IR"
+                    "myproject - NewImages"
                 ]
             }
         },
         "25": {
             "id": 25,
-            "from": 3,
+            "from": 4,
             "to": 14,
-            "name": "3 -\u003e 14",
+            "name": "4 -\u003e 14",
             "data": {
                 "newArtifact": [
-                    "myproject - IR"
+                    "myproject - NewImages"
                 ]
             }
         },
@@ -521,23 +521,23 @@
         },
         "28": {
             "id": 28,
-            "from": 4,
+            "from": 3,
             "to": 16,
-            "name": "4 -\u003e 16",
+            "name": "3 -\u003e 16",
             "data": {
                 "newArtifact": [
-                    "myproject - NewImages"
+                    "myproject - IR"
                 ]
             }
         },
         "29": {
             "id": 29,
-            "from": 4,
+            "from": 3,
             "to": 16,
-            "name": "4 -\u003e 16",
+            "name": "3 -\u003e 16",
             "data": {
                 "newArtifact": [
-                    "myproject - NewImages"
+                    "myproject - IR"
                 ]
             }
         },
@@ -559,92 +559,92 @@
             "name": "6 -\u003e 17",
             "data": {
                 "newArtifact": [
-                    "weatherapp - KubernetesYamls"
+                    "Knative - KubernetesYamls"
                 ]
             }
         },
         "31": {
             "id": 31,
-            "from": 10,
+            "from": 9,
             "to": 17,
-            "name": "10 -\u003e 17",
-            "data": {
-                "newArtifact": [
-                    "Tekton - KubernetesYamls"
-                ]
-            }
-        },
-        "32": {
-            "id": 32,
-            "from": 13,
-            "to": 17,
-            "name": "13 -\u003e 17",
-            "data": {
-                "newArtifact": [
-                    "Knative - KubernetesYamls"
-                ]
-            }
-        },
-        "33": {
-            "id": 33,
-            "from": 15,
-            "to": 17,
-            "name": "15 -\u003e 17",
-            "data": {
-                "newArtifact": [
-                    "ArgoCD - KubernetesYamls"
-                ]
-            }
-        },
-        "34": {
-            "id": 34,
-            "from": 15,
-            "to": 17,
-            "name": "15 -\u003e 17",
-            "data": {
-                "newArtifact": [
-                    "ArgoCD - KubernetesYamls"
-                ]
-            }
-        },
-        "35": {
-            "id": 35,
-            "from": 6,
-            "to": 18,
-            "name": "6 -\u003e 18",
+            "name": "9 -\u003e 17",
             "data": {
                 "newArtifact": [
                     "weatherapp - KubernetesYamls"
                 ]
             }
         },
-        "36": {
-            "id": 36,
-            "from": 10,
-            "to": 18,
-            "name": "10 -\u003e 18",
+        "32": {
+            "id": 32,
+            "from": 11,
+            "to": 17,
+            "name": "11 -\u003e 17",
+            "data": {
+                "newArtifact": [
+                    "ArgoCD - KubernetesYamls"
+                ]
+            }
+        },
+        "33": {
+            "id": 33,
+            "from": 14,
+            "to": 17,
+            "name": "14 -\u003e 17",
+            "data": {
+                "newArtifact": [
+                    "ContainerImagesPushScript - ContainerImagesPushScript"
+                ]
+            }
+        },
+        "34": {
+            "id": 34,
+            "from": 16,
+            "to": 17,
+            "name": "16 -\u003e 17",
             "data": {
                 "newArtifact": [
                     "Tekton - KubernetesYamls"
                 ]
             }
         },
-        "37": {
-            "id": 37,
-            "from": 13,
+        "35": {
+            "id": 35,
+            "from": 16,
+            "to": 17,
+            "name": "16 -\u003e 17",
+            "data": {
+                "newArtifact": [
+                    "Tekton - KubernetesYamls"
+                ]
+            }
+        },
+        "36": {
+            "id": 36,
+            "from": 6,
             "to": 18,
-            "name": "13 -\u003e 18",
+            "name": "6 -\u003e 18",
             "data": {
                 "newArtifact": [
                     "Knative - KubernetesYamls"
                 ]
             }
         },
+        "37": {
+            "id": 37,
+            "from": 9,
+            "to": 18,
+            "name": "9 -\u003e 18",
+            "data": {
+                "newArtifact": [
+                    "weatherapp - KubernetesYamls"
+                ]
+            }
+        },
         "38": {
             "id": 38,
-            "from": 15,
+            "from": 11,
             "to": 18,
-            "name": "15 -\u003e 18",
+            "name": "11 -\u003e 18",
             "data": {
                 "newArtifact": [
                     "ArgoCD - KubernetesYamls"
@@ -658,7 +658,7 @@
             "name": "16 -\u003e 18",
             "data": {
                 "newArtifact": [
-                    "ContainerImagesPushScript - ContainerImagesPushScript"
+                    "Tekton - KubernetesYamls"
                 ]
             }
         },
@@ -680,7 +680,7 @@
             "name": "16 -\u003e 18",
             "data": {
                 "newArtifact": [
-                    "ContainerImagesPushScript - ContainerImagesPushScript"
+                    "Tekton - KubernetesYamls"
                 ]
             }
         },

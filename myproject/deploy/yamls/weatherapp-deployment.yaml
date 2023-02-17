@@ -25,8 +25,8 @@ spec:
       name: weatherapp
     spec:
       containers:
-        - image: quay.io/myproject/weatherapp:latest
-          imagePullPolicy: Always
+        - image: weatherappi
+          PullPolicy: IfNotPresent
           name: weatherapp
           ports:
             - containerPort: 8080

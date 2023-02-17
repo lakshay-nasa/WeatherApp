@@ -56,83 +56,83 @@ spec:
         - WinWebApp-Dockerfile
         - ZuulAnalyser
       default:
-        - Kubernetes
-        - Buildconfig
-        - DockerfileDetector
-        - Parameterizer
         - EarAnalyser
-        - CloudFoundry
-        - Jboss
-        - Jar
-        - ClusterSelector
-        - WarAnalyser
-        - Tekton
-        - ComposeGenerator
-        - Maven
-        - Tomcat
-        - Golang-Dockerfile
-        - Liberty
-        - OperatorsFromTCA
-        - EarRouter
-        - Knative
         - KubernetesVersionChanger
-        - OperatorTransformer
-        - Nodejs-Dockerfile
-        - ComposeAnalyser
-        - Rust-Dockerfile
-        - ArgoCD
-        - WinWebApp-Dockerfile
+        - CloudFoundry
+        - Knative
         - Python-Dockerfile
-        - DockerfileParser
-        - CNBContainerizer
-        - ReadMeGenerator
-        - PHP-Dockerfile
-        - DotNetCore-Dockerfile
+        - Ruby-Dockerfile
         - Gradle
-        - ZuulAnalyser
+        - Golang-Dockerfile
+        - WinWebApp-Dockerfile
+        - Jboss
+        - WarAnalyser
+        - DotNetCore-Dockerfile
+        - OperatorTransformer
+        - ComposeGenerator
+        - ReadMeGenerator
+        - OperatorsFromTCA
+        - ClusterSelector
+        - Maven
+        - Kubernetes
+        - ComposeAnalyser
+        - ArgoCD
+        - DockerfileDetector
+        - DockerfileParser
+        - Rust-Dockerfile
+        - EarRouter
         - WarRouter
         - DockerfileImageBuildScript
-        - Ruby-Dockerfile
+        - Buildconfig
+        - CNBContainerizer
         - ContainerImagesPushScriptGenerator
+        - Jar
+        - PHP-Dockerfile
+        - Nodejs-Dockerfile
+        - Tomcat
+        - ZuulAnalyser
+        - Tekton
+        - Liberty
+        - Parameterizer
       answer:
-        - Kubernetes
-        - Buildconfig
-        - DockerfileDetector
-        - Parameterizer
         - EarAnalyser
-        - CloudFoundry
-        - Jboss
-        - Jar
-        - ClusterSelector
-        - WarAnalyser
-        - Tekton
-        - ComposeGenerator
-        - Maven
-        - Tomcat
-        - Golang-Dockerfile
-        - Liberty
-        - OperatorsFromTCA
-        - EarRouter
-        - Knative
         - KubernetesVersionChanger
-        - OperatorTransformer
-        - Nodejs-Dockerfile
-        - ComposeAnalyser
-        - Rust-Dockerfile
-        - ArgoCD
-        - WinWebApp-Dockerfile
+        - CloudFoundry
+        - Knative
         - Python-Dockerfile
-        - DockerfileParser
-        - CNBContainerizer
-        - ReadMeGenerator
-        - PHP-Dockerfile
-        - DotNetCore-Dockerfile
+        - Ruby-Dockerfile
         - Gradle
-        - ZuulAnalyser
+        - Golang-Dockerfile
+        - WinWebApp-Dockerfile
+        - Jboss
+        - WarAnalyser
+        - DotNetCore-Dockerfile
+        - OperatorTransformer
+        - ComposeGenerator
+        - ReadMeGenerator
+        - OperatorsFromTCA
+        - ClusterSelector
+        - Maven
+        - Kubernetes
+        - ComposeAnalyser
+        - ArgoCD
+        - DockerfileDetector
+        - DockerfileParser
+        - Rust-Dockerfile
+        - EarRouter
         - WarRouter
         - DockerfileImageBuildScript
-        - Ruby-Dockerfile
+        - Buildconfig
+        - CNBContainerizer
         - ContainerImagesPushScriptGenerator
+        - Jar
+        - PHP-Dockerfile
+        - Nodejs-Dockerfile
+        - Tomcat
+        - ZuulAnalyser
+        - Tekton
+        - Liberty
+        - Parameterizer
     - id: move2kube.spawncontainers
       type: Confirm
       description: Allow spawning containers?
@@ -184,13 +184,13 @@ spec:
       hints:
         - Choose the cluster type you would like to target
       options:
+        - GCP-GKE
+        - IBM-IKS
         - IBM-Openshift
         - Kubernetes
         - Openshift
         - AWS-EKS
         - Azure-AKS
-        - GCP-GKE
-        - IBM-IKS
       default: Kubernetes
       answer: Kubernetes
     - id: move2kube.services."weatherapp"."8080".servicetype
