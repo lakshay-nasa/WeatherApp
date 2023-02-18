@@ -1,6 +1,8 @@
 # WeatherApp
 
-![appview](static/wapp.gif)
+![appview](WeatherApp/static/wapp.gif)
+
+Note -> The WebApp has been containerized using [Move2Kube tool](https://github.com/konveyor/move2kube/).
 
 # About
 A personal project built for understanding APIs. The application provides real-time weather details with images of the searched place in the background.
