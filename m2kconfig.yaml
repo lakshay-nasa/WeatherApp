@@ -1,0 +1,63 @@
+move2kube:
+  minreplicas: "2"
+  services:
+    weatherapp:
+      "8080":
+        servicetype: Ingress
+        urlpath: /weatherapp
+      enable: true
+      port: "8080"
+  spawncontainers: false
+  target:
+    default:
+      clustertype: Kubernetes
+      ingress:
+        host: myproject.com
+        ingressclassname: ""
+        tls: ""
+    imageregistry:
+      namespace: myproject
+      quay.io:
+        logintype: no authentication
+      url: quay.io
+  transformers:
+    types:
+      - EarAnalyser
+      - KubernetesVersionChanger
+      - CloudFoundry
+      - Knative
+      - Python-Dockerfile
+      - Ruby-Dockerfile
+      - Gradle
+      - Golang-Dockerfile
+      - WinWebApp-Dockerfile
+      - Jboss
+      - WarAnalyser
+      - DotNetCore-Dockerfile
+      - OperatorTransformer
+      - ComposeGenerator
+      - ReadMeGenerator
+      - OperatorsFromTCA
+      - ClusterSelector
+      - Maven
+      - Kubernetes
+      - ComposeAnalyser
+      - ArgoCD
+      - DockerfileDetector
+      - DockerfileParser
+      - Rust-Dockerfile
+      - EarRouter
+      - WarRouter
+      - DockerfileImageBuildScript
+      - Buildconfig
+      - CNBContainerizer
+      - ContainerImagesPushScriptGenerator
+      - Jar
+      - PHP-Dockerfile
+      - Nodejs-Dockerfile
+      - Tomcat
+      - ZuulAnalyser
+      - Tekton
+      - Liberty
+      - Parameterizer
+  transformerselector: ""

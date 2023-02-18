@@ -1,0 +1,4 @@
+resources:
+  - myproject-ingress.yaml
+  - weatherapp-deployment.yaml
+  - weatherapp-service.yaml

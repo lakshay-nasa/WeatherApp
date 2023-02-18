@@ -1,0 +1,46 @@
+
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+    creationTimestamp: null
+    labels:
+        move2kube.konveyor.io/service: weatherapp
+    name: weatherapp
+spec:
+    progressDeadlineSeconds: 600
+    replicas: {{ index .Values "common" "replicas" }}
+    revisionHistoryLimit: 10
+    selector:
+        matchLabels:
+            move2kube.konveyor.io/service: weatherapp
+    strategy:
+        rollingUpdate:
+            maxSurge: 25%
+            maxUnavailable: 25%
+        type: RollingUpdate
+    template:
+        metadata:
+            creationTimestamp: null
+            labels:
+                move2kube.konveyor.io/service: weatherapp
+            name: weatherapp
+        spec:
+            containers:
+                - image: quay.io/myproject/weatherapp:latest
+                  imagePullPolicy: Always
+                  name: weatherapp
+                  ports:
+                    - containerPort: 8080
+                      protocol: TCP
+                  resources: {}
+                  terminationMessagePath: /dev/termination-log
+                  terminationMessagePolicy: File
+            dnsPolicy: ClusterFirst
+            restartPolicy: Always
+            schedulerName: default-scheduler
+            securityContext: {}
+            terminationGracePeriodSeconds: 30
+status: {}
+
+...
