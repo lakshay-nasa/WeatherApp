@@ -35,9 +35,3 @@ def home():
 
     else:
         return render_template('index.html', src=getImage(), Icon=None)
-
-if __name__ == "__main__":
-    app.run(port=5000, debug=True)
-
-
-# api id = d670c867d8c8998117536ef9d9abe6fb
