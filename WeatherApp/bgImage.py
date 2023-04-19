@@ -1,7 +1,6 @@
 from ast import Try
 from flask import Flask, flash, render_template, request
 import requests
-import os
 
 app = Flask(__name__)
 
